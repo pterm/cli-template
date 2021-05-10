@@ -2,6 +2,7 @@ on:
   push:
     branches:
       - main
+      - master
 
 name: Create Git Tag
 jobs:
@@ -11,4 +12,4 @@ jobs:
       - name: Update Version
         uses: pterm/tag-action@master
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}

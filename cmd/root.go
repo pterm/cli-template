@@ -9,9 +9,11 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:     "cli-template",
-	Short:   "A brief description of your application",
-	Long:    `A longer description that spans multiple lines and likely contains\nexamples and usage of using your application.`,
+	Use:   "cli-template",
+	Short: "A brief description of your application",
+	Long:  `A longer description that spans multiple lines and likely contains\nexamples and usage of using your application.`,
+	// ! This template features automatic releases.
+	// ! When you have set a REPO_ACCESS_TOKEN secret in GitHub, increasing this version will push a new release automatically.
 	Version: "v0.0.1", // <---VERSION---> This comment enables auto-releases on version change!
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
