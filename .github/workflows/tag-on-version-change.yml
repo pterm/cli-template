@@ -1,0 +1,14 @@
+on:
+  push:
+    branches:
+      - main
+
+name: Create Git Tag
+jobs:
+  versioner:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update Version
+        uses: pterm/tag-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
