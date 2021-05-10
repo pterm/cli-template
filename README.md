@@ -6,8 +6,8 @@
 
 |Feature|
 |-------|
-|[Modern Style]()|
-|[Automatic Releases]()|
+|[Modern Style](https://github.com/pterm/cli-template#modern-style)|
+|[Automatic Releases](https://github.com/pterm/cli-template#automatic-releases)|
 
 ### Modern Style
 
