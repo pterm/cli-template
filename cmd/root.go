@@ -19,7 +19,7 @@ examples and usage of using your application.`,
 	Version: "v0.0.1", // <---VERSION---> This comment enables auto-releases on version change!
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
-	// 	Run: func(cmd *cobra.Command, args []string) {  },
+	// 	Run: func(cmd *cobra.Command, args []string) {   },
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -34,6 +34,7 @@ func Execute() {
 func init() {
 	// Adds a global `debug` flag which is bound to PTerms debug output variable.
 	rootCmd.PersistentFlags().BoolVar(&pterm.PrintDebugMessages, "debug", false, "enable debug messages")
+	rootCmd.PersistentFlags().BoolVar(&pterm.RawOutput, "raw", false, "print unstyled raw output")
 
 	// Use https://github.com/pterm/pcli to style the output of cobra.
 	rootCmd.SetVersionTemplate(pcli.GenerateVersionString(rootCmd.Name(), rootCmd.Version))
