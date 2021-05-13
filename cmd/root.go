@@ -32,9 +32,9 @@ func Execute() {
 }
 
 func init() {
-	// Adds a global `debug` flag which is bound to PTerms debug output variable.
+	// Adds global flags for PTerm settings.
 	rootCmd.PersistentFlags().BoolVar(&pterm.PrintDebugMessages, "debug", false, "enable debug messages")
-	rootCmd.PersistentFlags().BoolVar(&pterm.RawOutput, "raw", false, "print unstyled raw output")
+	rootCmd.PersistentFlags().BoolVar(&pterm.RawOutput, "raw", false, "print unstyled raw output (set it if output is written to a file)")
 
 	// Use https://github.com/pterm/pcli to style the output of cobra.
 	rootCmd.SetVersionTemplate(pcli.GenerateVersionString(rootCmd.Name(), rootCmd.Version))
