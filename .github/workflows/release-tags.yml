@@ -11,7 +11,7 @@ jobs:
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
     steps:
-      - uses: "pterm/release-tag-action@master"
+      - uses: pterm/release-tag-action@main
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false

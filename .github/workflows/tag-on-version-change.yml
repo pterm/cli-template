@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Update Version
-        uses: pterm/tag-action@master
+        uses: pterm/tag-action@main
         env:
           ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
