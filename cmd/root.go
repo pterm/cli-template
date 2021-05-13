@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"github.com/pterm/pcli"
+	"github.com/pterm/pterm"
 	"github.com/spf13/cobra"
 )
 
@@ -18,7 +19,7 @@ examples and usage of using your application.`,
 	Version: "v0.0.1", // <---VERSION---> This comment enables auto-releases on version change!
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
-	//	Run: func(cmd *cobra.Command, args []string) { },
+	// 	Run: func(cmd *cobra.Command, args []string) {  },
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -31,13 +32,14 @@ func Execute() {
 }
 
 func init() {
-	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	// Adds a global `debug` flag which is bound to PTerms debug output variable.
+	rootCmd.PersistentFlags().BoolVar(&pterm.PrintDebugMessages, "debug", false, "enable debug messages")
 
-	// Use https://github.com/pterm/pcli style the output of cobra.
+	// Use https://github.com/pterm/pcli to style the output of cobra.
 	rootCmd.SetVersionTemplate(pcli.GenerateVersionString(rootCmd.Name(), rootCmd.Version))
 	rootCmd.SetHelpFunc(pcli.Spf13CobraHelpFunc(rootCmd))
 	rootCmd.SetFlagErrorFunc(pcli.Spf13CobraFlagErrorFunc(rootCmd))
 
 	// Change global PTerm theme
-	// pterm.ThemeDefault.SectionStyle = *pterm.NewStyle(pterm.FgCyan)
+	pterm.ThemeDefault.SectionStyle = *pterm.NewStyle(pterm.FgCyan)
 }

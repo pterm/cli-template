@@ -5,6 +5,8 @@ import (
 	"github.com/spf13/cobra"
 )
 
+var helloName string
+
 var helloCmd = &cobra.Command{
 	Use:   "hello",
 	Short: "A brief description of your command",
@@ -15,10 +17,13 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		pterm.Info.Println("Hello, World!")
+		pterm.Info.Printfln("Hello, %s!", helloName)
 	},
 }
 
 func init() {
 	rootCmd.AddCommand(helloCmd)
+
+	helloCmd.Flags().StringVarP(&helloName, "name", "n", "", "Your name")
+	pterm.Fatal.PrintOnError(helloCmd.MarkFlagRequired("name"))
 }
