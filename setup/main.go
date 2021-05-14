@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"io/fs"
 	"io/ioutil"
 	"os/exec"
 	"path/filepath"
@@ -45,15 +46,35 @@ func main() {
 	}
 
 	project := struct {
-		Username   string
-		Reponame   string
-		ProjectURL string
+		Username    string
+		Reponame    string
+		ProjectURL  string
+		ProjectName string
 	}{}
 
 	pterm.Fatal.PrintOnError(survey.Ask(qs, &project))
 	project.ProjectURL = pterm.Sprintf("github.com/%s/%s", project.Username, project.Reponame)
+	project.ProjectName = pterm.Sprintf("%s/%s", project.Username, project.Reponame)
 
-	pterm.Println(filepath.Join(getPathTo("go.mod")))
+	const cliTemplateURL = "pterm/cli-template"
+
+	pterm.Info.Printfln("Replacing all '%s' with %s", pterm.Magenta(cliTemplateURL), pterm.Magenta(project.ProjectName))
+	walkOverExt("go,mod", func(path string) {
+		pterm.Debug.Printfln("Replacing '%s' in %s with %s", pterm.Magenta(cliTemplateURL), path, pterm.Magenta(project.ProjectName))
+		replaceAllInFile(path, cliTemplateURL, project.ProjectName)
+	})
+}
+
+func walkOverExt(exts string, f func(path string)) {
+	_ = filepath.Walk(getPathTo(""), func(path string, info fs.FileInfo, err error) error {
+
+		for _, ext := range strings.Split(exts, ",") {
+			if filepath.Ext(path) == "."+ext {
+				f(path)
+			}
+		}
+		return nil
+	})
 }
 
 func detectOriginURL() (url string) {
