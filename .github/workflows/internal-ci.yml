@@ -3,7 +3,7 @@ name: update-docs
 on: [ push ]
 
 jobs:
-  test:
+  docs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
