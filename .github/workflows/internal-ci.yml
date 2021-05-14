@@ -17,9 +17,13 @@ jobs:
       - name: Run PTerm-CI
         run: |
           go run . ptermCI
+      - name: Push changes
+        run: |
           git config --global user.name 'MarvinJWendt'
           git config --global user.email 'git@marvinjwendt.com'
-          git commit -am 'docs: update docs using PTerm-CI'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git checkout "${GITHUB_REF:11}"
+          git commit -am "docs: update docs with PTerm-CI"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
