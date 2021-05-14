@@ -107,7 +107,6 @@ func replaceAllInFile(filepath, search, replace string) {
 	pterm.Warning.PrintOnError(ioutil.WriteFile(filepath, []byte(content), 0600))
 }
 
-// pwd returns the directory of the currently running go script file.
 func getPathTo(file string) string {
 	// NOTE: Replace the 1 with a 0 if you use this code directly, instead of wrapping it in a function.
 	_, scriptPath, _, _ := runtime.Caller(1)
