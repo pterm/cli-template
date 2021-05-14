@@ -25,6 +25,6 @@ jobs:
           git checkout "${GITHUB_REF:11}"
           git add .
           git commit -am "docs: update docs with PTerm-CI"
-          git push
+          git push || true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
