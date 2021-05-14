@@ -17,8 +17,9 @@ jobs:
       - name: Run PTerm-CI
         run: |
           go run . ptermCI
-          git add .
-          git commit -m 'docs: update docs using PTerm-CI'
+          git config --global user.name 'MarvinJWendt'
+          git config --global user.email 'git@marvinjwendt.com'
+          git commit -am 'docs: update docs using PTerm-CI'
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
