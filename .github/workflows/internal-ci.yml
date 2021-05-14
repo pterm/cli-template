@@ -23,6 +23,7 @@ jobs:
           git config --global user.email 'git@marvinjwendt.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git checkout "${GITHUB_REF:11}"
+          git add .
           git commit -am "docs: update docs with PTerm-CI"
           git push
         env:
