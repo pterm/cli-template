@@ -38,9 +38,13 @@ func init() {
 	rootCmd.PersistentFlags().BoolVarP(&pterm.RawOutput, "raw", "", false, "print unstyled raw output (set it if output is written to a file)")
 
 	// Use https://github.com/pterm/pcli to style the output of cobra.
-	rootCmd.SetVersionTemplate(pcli.GenerateVersionString(rootCmd.Name(), rootCmd.Version))
-	rootCmd.SetHelpFunc(pcli.Spf13CobraHelpFunc(rootCmd))
-	rootCmd.SetFlagErrorFunc(pcli.Spf13CobraFlagErrorFunc(rootCmd))
+	rootCmd.SetFlagErrorFunc(pcli.FlagErrorFunc(rootCmd))
+	rootCmd.SetGlobalNormalizationFunc(pcli.GlobalNormalizationFunc(rootCmd))
+	rootCmd.SetHelpFunc(pcli.HelpFunc(rootCmd))
+	rootCmd.SetHelpTemplate(pcli.HelpTemplate(rootCmd))
+	rootCmd.SetUsageFunc(pcli.UsageFunc(rootCmd))
+	rootCmd.SetUsageTemplate(pcli.UsageTemplate(rootCmd))
+	rootCmd.SetVersionTemplate(pcli.VersionTemplate(rootCmd))
 
 	// Change global PTerm theme
 	pterm.ThemeDefault.SectionStyle = *pterm.NewStyle(pterm.FgCyan)
