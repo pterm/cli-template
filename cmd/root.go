@@ -39,6 +39,7 @@ func init() {
 
 	// Use https://github.com/pterm/pcli to style the output of cobra.
 	pcli.SetRootCmd(rootCmd)
+	rootCmd.AddCommand(pcli.GetCiCommand())
 	rootCmd.SetFlagErrorFunc(pcli.FlagErrorFunc())
 	rootCmd.SetGlobalNormalizationFunc(pcli.GlobalNormalizationFunc())
 	rootCmd.SetHelpFunc(pcli.HelpFunc())
