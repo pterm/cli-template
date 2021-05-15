@@ -17,9 +17,9 @@ jobs:
       - name: Run PTerm-CI
         run: |
           ls -la
-          sudo go get
-          sudo go mod tidy
-          sudo go run . ptermCI
+          go get
+          go mod tidy
+          go run . ptermCI
       - name: Push changes
         run: |
           git config --global user.name 'MarvinJWendt'
