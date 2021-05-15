@@ -10,9 +10,6 @@
 
 ### Windows Command
 
-?> **NOTICE**
-This command has to be run in an elevated powershell prompt.
-
 ```powershell
 iwr -useb instl.sh/pterm/cli-template/windows | iex
 ```
@@ -21,9 +18,6 @@ iwr -useb instl.sh/pterm/cli-template/windows | iex
 
 ### Linux Command
 
-?> **NOTICE**
-This command has to be run in an elevated shell.
-
 ```bash
 curl -s https://instl.sh/pterm/cli-template/linux | sudo bash
 ```
@@ -31,9 +25,6 @@ curl -s https://instl.sh/pterm/cli-template/linux | sudo bash
 #### ** macOS **
 
 ### macOS Command
-
-?> **NOTICE**
-This command has to be run in an elevated shell.
 
 ```bash
 /bin/bash -c "$(curl -fsSL instl.sh/pterm/cli-template/macos)"

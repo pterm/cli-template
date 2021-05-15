@@ -10,33 +10,24 @@
 
 ### Windows Command
 
-?> **NOTICE**
-This command has to be run in an elevated powershell prompt.
-
 ```powershell
-iwr -useb instl.sh/{{ .ProjectPath }}/windows | iex
+{{ .InstallCommandWindows }}
 ```
 
 #### ** Linux **
 
 ### Linux Command
 
-?> **NOTICE**
-This command has to be run in an elevated shell.
-
 ```bash
-curl -s https://instl.sh/{{ .ProjectPath }}/linux | sudo bash
+{{ .InstallCommandLinux }}
 ```
 
 #### ** macOS **
 
 ### macOS Command
 
-?> **NOTICE**
-This command has to be run in an elevated shell.
-
 ```bash
-/bin/bash -c "$(curl -fsSL instl.sh/{{ .ProjectPath }}/macos)"
+{{ .InstallCommandMacOS }}
 ```
 
 #### ** Compile from source **
