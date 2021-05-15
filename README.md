@@ -2,6 +2,16 @@
 
 <p align="center">⚗ A template for beautiful, modern, cross-platform compatible CLI tools written with Go!</p>
 
+----
+
+<p align="center">
+<strong><a href="#getting-started">Getting Started</a></strong>
+|
+<strong><a href="https://github.com/pterm/cli-template/wiki/">Wiki</a></strong>
+</p>
+
+----
+
 |                             This template features                              |
 |---------------------------------------------------------------------------------|
 |[Modern Style 💎](https://github.com/pterm/cli-template#modern-style)            |
@@ -10,9 +20,11 @@
 
 ## Getting Started
 
-1. Click on <kbd>Use this template<kbd>
-1. Wait for your repository to initialize
-1. Create a personal access token and add it as a repository secret (`REPO_ACCESS_TOKEN`)
+You can find an in-depth tutorial in the Wiki here: [Getting Started](https://github.com/pterm/cli-template/wiki/Getting-Started)
+
+1. Click on <kbd>Use this template<kbd> on the top of the page.
+1. Wait for your repository to initialize.
+1. Create a personal access token and add it as a repository secret (`REPO_ACCESS_TOKEN`). [(GitHub Docs)](https://docs.github.com/es/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
 1. Clone and open your repository to change the name and description of your CLI in `./cmd/root.go`.
 1. After you have set up your programm you have to create the very first release manually (`v0.0.1`) to initialize the CI-System.
     1. Don't worry if your CLI tool doesn't do anything yet. It's common that the `v0.0.1` release is just the plain project setup.
