@@ -12,10 +12,13 @@
 
 ----
 
-|                             This template features                              |
-|---------------------------------------------------------------------------------|
-|[Modern Style 💎](https://github.com/pterm/cli-template#modern-style)            |
+|This template features|
+|----------------------|
+|[Modern Style 💎](https://github.com/pterm/cli-template#modern-style)|
 |[Automatic Releases 🚀](https://github.com/pterm/cli-template#automatic-releases)|
+|[Automatic Website/Docs Generation 🌐](https://github.com/pterm/cli-template#automatic-website-generation)|
+|[Automatic Deployment 🔝](https://github.com/pterm/cli-template#automatic-deployment)|
+|[Custom CI-System 🤖](https://github.com/pterm/cli-template#automatic-custom-ci-system)|
 |[Custom Libraries 🔬](https://github.com/pterm/cli-template#custom-libraries)|
 
 ## Getting Started
@@ -46,6 +49,11 @@ This template uses https://github.com/pterm/pterm to provide colorful, cross-pla
 Our custom made CI system will detect when you change the version of your CLI and will **automatically create a GitHub release for you**.
 You'll never have to deploy your CLI tools manually again! 
 
+### Automatic Website Generation
+
+### Automatic Deployment
+
+### Custom CI-System
 
 ### Custom Libraries
 
