@@ -18,6 +18,7 @@ builds:
       - arm
       - arm64
     mod_timestamp: '{{ .CommitTimestamp }}'
+    gobinary: "go1.16.4"
     flags:
       - -trimpath
     ldflags:
