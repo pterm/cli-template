@@ -1,8 +1,8 @@
 env:
   - GO111MODULE=on
 before:
-#  hooks:
-#    - go mod tidy
+  hooks:
+    - go mod tidy
 gomod:
   proxy: true
 builds:
@@ -18,7 +18,6 @@ builds:
       - arm
       - arm64
     mod_timestamp: '{{ .CommitTimestamp }}'
-    gobinary: "go1.16.4"
     flags:
       - -trimpath
     ldflags:
