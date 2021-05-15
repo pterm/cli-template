@@ -1,10 +1,7 @@
 - [Installation](installation.md)
-- [Usage](usage.md)
-- Commands
-<!-- <<<PTERM-CI-COMMANDS-START>>> -->
-  - [cli-template](commands/cli-template.md)
-  - [hello](commands/hello.md)
-  - [help](commands/help.md)
-<!-- <<<PTERM-CI-COMMANDS-END>>> -->
+- [Docs](docs.md)
+
+---
+
 - [Contributing](CONTRIBUTING.md)
-- [FAQ](faq.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)

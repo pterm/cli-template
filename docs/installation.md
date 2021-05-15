@@ -1,7 +1,8 @@
-# Quick Start - Install dops
+# Quick Start - Install cli-template
 
-> Dops is crossplatform compatible.\
-> Use the following instructions to install or update dops.
+> [!TIP]
+> cli-template is installable via [instl.sh](https://instl.sh).\
+> You just have to run the following command and you're ready to go!
 
 <!-- tabs:start -->
 
@@ -13,12 +14,8 @@
 This command has to be run in an elevated powershell prompt.
 
 ```powershell
-iwr -useb dops-cli.com/get/windows | iex
+iwr -useb instl.sh/pterm/cli-template/windows | iex
 ```
-
-!> **WARNING**
-This command is executed with administrative rights!\
-Of course dops, just like the installation script, is not harmful to your computer. But it's good practise to control every script that is run with administrative rights. You can copy the URL from the command and paste it into your browser to view the script. Also, all of our installation scripts are located in a GitHub repository at the URL: https://github.com/dops-cli/get-dops 
 
 #### ** Linux **
 
@@ -28,12 +25,8 @@ Of course dops, just like the installation script, is not harmful to your comput
 This command has to be run in an elevated shell.
 
 ```bash
-curl -s https://dops-cli.com/get/linux | sudo bash
+curl -s https://instl.sh/pterm/cli-template/linux | sudo bash
 ```
-
-!> **WARNING**
-This command is executed with administrative rights!\
-Of course dops, just like the installation script, is not harmful to your computer. But it's good practise to control every script that is run with administrative rights. You can copy the URL from the command and paste it into your browser to view the script. Also, all of our installation scripts are located in a GitHub repository at the URL: https://github.com/dops-cli/get-dops 
 
 #### ** macOS **
 
@@ -43,30 +36,21 @@ Of course dops, just like the installation script, is not harmful to your comput
 This command has to be run in an elevated shell.
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://dops-cli.com/get/linux)"
+/bin/bash -c "$(curl -fsSL instl.sh/pterm/cli-template/macos)"
 ```
-
-!> **WARNING**
-This command is executed with administrative rights!\
-Of course dops, just like the installation script, is not harmful to your computer. But it's good practise to control every script that is run with administrative rights. You can copy the URL from the command and paste it into your browser to view the script. Also, all of our installation scripts are located in a GitHub repository at the URL: https://github.com/dops-cli/get-dops 
 
 #### ** Compile from source **
 
 ### Compile from source with Golang
 
 ?> **NOTICE**
-To compile dops from source, you have to have [go](https://golang.org/) installed.
+To compile cli-template from source, you have to have [Go](https://golang.org/) installed.
 
-Compiling dops from source has the benefit that the command is the same on every platform.\
-You have to have [go](https://golang.org/) installed to use this command.\
-It is not recommended to install go only for the installation of dops.
+Compiling cli-template from source has the benefit that the build command is the same on every platform.\
+It is not recommended to install Go only for the installation of cli-template.
 
-
-!> **WARNING**
-Make sure you don't run this command in a folder which contains a `go.mod` file, otherwise you will add dops as a dependency to your go module.
-
-```bash
-go get -u github.com/dops-cli/dops
+```command
+go install github.com/pterm/cli-template@latest
 ```
 
 <!-- tabs:end -->

@@ -18,8 +18,8 @@
 <div id="app"></div>
 <script>
     window.$docsify = {
-        name: 'cli-template',
-        repo: 'pterm/cli-template',
+        name: '{{ .Name }}',
+        repo: '{{ .ProjectPath }}',
         executeScript: true,
         loadSidebar: true,
         auto2top: true,
@@ -27,7 +27,7 @@
         subMaxLevel: 10,
         coverpage: true,
         plugins: [
-            EditOnGithubPlugin.create("https://github.com/pterm/cli-template/blob/main/docs/", "", "Edit this document on GitHub")
+            EditOnGithubPlugin.create("https://github.com/{{ .ProjectPath }}/blob/main/docs/", "", "Edit this document on GitHub")
         ],
         share: {
             reddit: true,
