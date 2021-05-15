@@ -14,12 +14,12 @@
 
 |This template features|
 |----------------------|
-|[Modern Style 💎](https://github.com/pterm/cli-template#modern-style)|
-|[Automatic Releases 🚀](https://github.com/pterm/cli-template#automatic-releases)|
-|[Automatic Website/Docs Generation 🌐](https://github.com/pterm/cli-template#automatic-website-generation)|
-|[Automatic Deployment 🔝](https://github.com/pterm/cli-template#automatic-deployment)|
-|[Custom CI-System 🤖](https://github.com/pterm/cli-template#automatic-custom-ci-system)|
-|[Custom Libraries 🔬](https://github.com/pterm/cli-template#custom-libraries)|
+|[Modern Style 💎](#modern-style)|
+|[Automatic Releases 🚀](#automatic-releases)|
+|[Automatic Website/Docs Generation 🌐](#automatic-website-generation)|
+|[Automatic Deployment 🔝](#automatic-deployment)|
+|[Custom CI-System 🤖](#custom-ci-system)|
+|[Custom Libraries 🔬](#custom-libraries)|
 
 ## Getting Started
 
