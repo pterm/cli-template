@@ -21,7 +21,7 @@ jobs:
           go run . ptermCI
       - name: Push changes
         run: |
-          git config --global user.name 'PtermCI' || exit 0
+          git config --global user.name 'PTermCI' || exit 0
           git config --global user.email 'ptermci@marvinjwendt.com' || exit 0
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY || exit 0
           git checkout "${GITHUB_REF:11}" || exit 0
