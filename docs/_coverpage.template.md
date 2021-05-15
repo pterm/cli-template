@@ -5,5 +5,5 @@
 {{ .Long }}
 
 [Installation](installation.md)
-[Usage](usage.md)
+[Docs](docs.md)
 [GitHub]({{ .URL }})
