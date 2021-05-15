@@ -4,12 +4,12 @@ import (
 	"flag"
 	"io/fs"
 	"io/ioutil"
+	"os"
 	"os/exec"
 	"path/filepath"
 	"runtime"
 	"strings"
 
-	"github.com/AlecAivazis/survey/v2"
 	"github.com/pterm/pterm"
 )
 
@@ -18,32 +18,12 @@ func main() {
 	flag.Parse()
 
 	pterm.DefaultHeader.Println("PTerm CLI Template Setup")
-	pterm.DefaultParagraph.Println("This setup will ask you a couple questions about your CLI tool and get the template ready to start!")
 
 	originURL := detectOriginURL()
 
 	projectParts := strings.Split(strings.TrimPrefix(originURL, "https://github.com/"), "/")
 	repoUser := projectParts[0]
 	repoName := projectParts[1]
-
-	var qs = []*survey.Question{
-		{
-			Name: "username",
-			Prompt: &survey.Input{
-				Message: "GitHub host username",
-				Default: repoUser,
-			},
-			Validate: survey.Required,
-		},
-		{
-			Name: "reponame",
-			Prompt: &survey.Input{
-				Message: "GitHub repository name",
-				Default: repoName,
-			},
-			Validate: survey.Required,
-		},
-	}
 
 	project := struct {
 		Username    string
@@ -52,7 +32,8 @@ func main() {
 		ProjectName string
 	}{}
 
-	pterm.Fatal.PrintOnError(survey.Ask(qs, &project))
+	project.Username = repoUser
+	project.Reponame = repoName
 	project.ProjectURL = pterm.Sprintf("github.com/%s/%s", project.Username, project.Reponame)
 	project.ProjectName = pterm.Sprintf("%s/%s", project.Username, project.Reponame)
 
@@ -63,6 +44,9 @@ func main() {
 		pterm.Debug.Printfln("Replacing '%s' in %s with %s", pterm.Magenta(cliTemplateURL), path, pterm.Magenta(project.ProjectName))
 		replaceAllInFile(path, cliTemplateURL, project.ProjectName)
 	})
+
+	pterm.Fatal.PrintOnError(os.Remove(getPathTo("./README.md")))
+	pterm.Fatal.PrintOnError(os.Rename(getPathTo("./README.template-setup.md"), getPathTo("./README.md")))
 }
 
 func walkOverExt(exts string, f func(path string)) {
@@ -108,7 +92,6 @@ func replaceAllInFile(filepath, search, replace string) {
 }
 
 func getPathTo(file string) string {
-	// NOTE: Replace the 1 with a 0 if you use this code directly, instead of wrapping it in a function.
 	_, scriptPath, _, _ := runtime.Caller(1)
 	return filepath.Join(scriptPath, "../../", file)
 }
