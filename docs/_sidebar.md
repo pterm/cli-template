@@ -3,9 +3,9 @@
 - Module Documentation
 <!-- <<<PTERM-CI-COMMANDS-START>>> -->
   - [cli-template](commands/cli-template.md)
-  - [cli-template_hello](commands/cli-template_hello.md)
-  - [cli-template_help](commands/cli-template_help.md)
-  - [cli-template_ptermCI](commands/cli-template_ptermCI.md)
+  - [hello](commands/hello.md)
+  - [help](commands/help.md)
+  - [ptermCI](commands/ptermCI.md)
 <!-- <<<PTERM-CI-COMMANDS-END>>> -->
 - [Contributing](CONTRIBUTING.md)
 - [FAQ](faq.md)
