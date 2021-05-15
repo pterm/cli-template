@@ -10,6 +10,17 @@
 
 ## Getting Started
 
+1. Click on <kbd>Use this template<kbd>
+1. Wait for your repository to initialize
+1. Create a personal access token and add it as a repository secret (`REPO_ACCESS_TOKEN`)
+1. Clone and open your repository to change the name and description of your CLI in `./cmd/root.go`.
+1. After you have set up your programm you have to create the very first release manually (`v0.0.1`) to initialize the CI-System.
+    1. Don't worry if your CLI tool doesn't do anything yet. It's common that the `v0.0.1` release is just the plain project setup.
+1. The setup is done and you can start to code!
+
+This template uses [spf13/cobra](https://github.com/spf13/cobra) as CLI framework.  
+You can find their documentation here: [cobra.dev](https://cobra.dev/)
+
 ## Features
 
 ### Modern Style
