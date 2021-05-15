@@ -46,7 +46,7 @@ func main() {
 	})
 
 	pterm.Fatal.PrintOnError(os.Remove(getPathTo("./README.md")))
-	pterm.Fatal.PrintOnError(os.Rename(getPathTo("./README.template-setup.md"), getPathTo("./README.md")))
+	pterm.Fatal.PrintOnError(os.Rename(getPathTo("./README.template-setup.md"), getPathTo("./README.template.md")))
 }
 
 func walkOverExt(exts string, f func(path string)) {
