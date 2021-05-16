@@ -1,7 +1,6 @@
 package cmd
 
 import (
-	"fmt"
 	"os"
 
 	"github.com/pterm/pcli"
@@ -26,7 +25,6 @@ examples and usage of using your application.`,
 // This is called by main.main(). It only needs to happen once to the rootCmd.
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
-		fmt.Println(err)
 		os.Exit(1)
 	}
 }
@@ -39,14 +37,7 @@ func init() {
 
 	// Use https://github.com/pterm/pcli to style the output of cobra.
 	pcli.SetRootCmd(rootCmd)
-	rootCmd.AddCommand(pcli.GetCiCommand())
-	rootCmd.SetFlagErrorFunc(pcli.FlagErrorFunc())
-	rootCmd.SetGlobalNormalizationFunc(pcli.GlobalNormalizationFunc())
-	rootCmd.SetHelpFunc(pcli.HelpFunc())
-	rootCmd.SetHelpTemplate(pcli.HelpTemplate())
-	rootCmd.SetUsageFunc(pcli.UsageFunc())
-	rootCmd.SetUsageTemplate(pcli.UsageTemplate())
-	rootCmd.SetVersionTemplate(pcli.VersionTemplate())
+	pcli.Setup()
 
 	// Change global PTerm theme
 	pterm.ThemeDefault.SectionStyle = *pterm.NewStyle(pterm.FgCyan)
