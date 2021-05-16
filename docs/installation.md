@@ -19,7 +19,7 @@ iwr -useb instl.sh/pterm/cli-template/windows | iex
 ### Linux Command
 
 ```bash
-curl -s https://instl.sh/pterm/cli-template/linux | sudo bash
+curl -fsSL instl.sh/pterm/cli-template/linux | sudo bash
 ```
 
 #### ** macOS **
