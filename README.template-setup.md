@@ -7,6 +7,10 @@
 <img src="https://img.shields.io/github/v/release/{{ .ProjectPath }}?style=flat-square" alt="Latest Release">
 </a>
 
+<a href="https://github.com/{{ .ProjectPath }}/releases">
+<img src="https://img.shields.io/github/downloads/{{ .ProjectPath }}/total.svg?style=flat-square" alt="Downloads">
+</a>
+
 <a href="https://github.com/{{ .ProjectPath }}/stargazers">
 <img src="https://img.shields.io/github/stars/{{ .ProjectPath }}.svg?style=flat-square" alt="Stars">
 </a>
