@@ -86,4 +86,4 @@ Simply type cli-template help [path to command] for full details.
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 18 May 2021**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 20 May 2021**
