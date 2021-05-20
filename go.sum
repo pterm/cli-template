@@ -142,10 +142,8 @@ github.com/prometheus/common v0.4.0/go.mod h1:TNfzLD0ON7rHzMJeJkieUDPYmFC7Snx/y8
 github.com/prometheus/procfs v0.0.0-20181005140218-185b4288413d/go.mod h1:c3At6R/oaqEKCNdg8wHV1ftS6bRYblBhIjjI8uT2IGk=
 github.com/prometheus/procfs v0.0.0-20190507164030-5867b95ac084/go.mod h1:TjEm7ze935MbeOT/UhFTIMYKhuLP4wbCsTZCD3I8kEA=
 github.com/prometheus/tsdb v0.7.1/go.mod h1:qhTCs0VvXwvX/y3TZrWD7rabWM+ijKTux40TwIPHuXU=
-github.com/pterm/pcli v0.3.10 h1:r32Wn5z8W9ZNwch18q5azDOFS4hugjLKaynNh0PO7iA=
-github.com/pterm/pcli v0.3.10/go.mod h1:HIHyZ3NnGIJj2bglchG5T7wN5w3oYtzdptojII+VSZI=
-github.com/pterm/pcli v0.3.12 h1:WYpuIjfk7U/DTijDDFuQXAUiSFpGJDR7c/HtkUiH0x4=
-github.com/pterm/pcli v0.3.12/go.mod h1:HIHyZ3NnGIJj2bglchG5T7wN5w3oYtzdptojII+VSZI=
+github.com/pterm/pcli v0.3.13 h1:rNUDQhx79opVuvPIh9vzBWfRuZVRTSrpgLv51FeVNHA=
+github.com/pterm/pcli v0.3.13/go.mod h1:HIHyZ3NnGIJj2bglchG5T7wN5w3oYtzdptojII+VSZI=
 github.com/pterm/pterm v0.12.17 h1:x2zfO3WnQOui7mofyaGZ+9G8xqiQ/XBNLamHDpkke1I=
 github.com/pterm/pterm v0.12.17/go.mod h1:fxLSiGFiUMqc4cksgghkmjoaxK3O55cC/XN3z9rYY5Q=
 github.com/rivo/uniseg v0.1.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
