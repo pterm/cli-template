@@ -31,7 +31,7 @@ func Execute() {
 
 func init() {
 	// Adds global flags for PTerm settings.
-	// Fill the empry strings with the shorthand variant (if you like to have one).
+	// Fill the empty strings with the shorthand variant (if you like to have one).
 	rootCmd.PersistentFlags().BoolVarP(&pterm.PrintDebugMessages, "debug", "", false, "enable debug messages")
 	rootCmd.PersistentFlags().BoolVarP(&pterm.RawOutput, "raw", "", false, "print unstyled raw output (set it if output is written to a file)")
 
