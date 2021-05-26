@@ -11,7 +11,7 @@
 ### Windows Command
 
 ```powershell
-iwr -useb instl.sh/pterm/cli-template/windows | iex
+iwr instl.sh/pterm/cli-template/windows | iex
 ```
 
 #### ** Linux **
@@ -19,7 +19,7 @@ iwr -useb instl.sh/pterm/cli-template/windows | iex
 ### Linux Command
 
 ```bash
-curl -fsSL instl.sh/pterm/cli-template/linux | bash
+curl -sSL instl.sh/pterm/cli-template/linux | sudo bash
 ```
 
 #### ** macOS **
@@ -27,7 +27,7 @@ curl -fsSL instl.sh/pterm/cli-template/linux | bash
 ### macOS Command
 
 ```bash
-curl -fsSL instl.sh/pterm/cli-template/macos | bash
+curl -sSL instl.sh/pterm/cli-template/macos | sudo bash
 ```
 
 #### ** Compile from source **
