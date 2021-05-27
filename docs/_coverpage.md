@@ -1,9 +1,9 @@
 # cli-template
 
-> A brief description of your application
+> This cli template shows the date and time in the terminal
 
-A longer description that spans multiple lines and likely contains
-examples and usage of using your application.
+This is a template CLI application, which can be used as a boilerplate for awesome CLI tools written in Go.
+This template prints the date or time to the terminal.
 
 [Installation](installation.md)
 [Docs](docs.md)

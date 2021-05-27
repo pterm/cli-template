@@ -1,15 +1,23 @@
 # cli-template
 
 ## Usage
-> A brief description of your application
+> This cli template shows the date and time in the terminal
 
 cli-template [global options] command [options] [arguments...]
 
 ## Description
 
 ```
-A longer description that spans multiple lines and likely contains
-examples and usage of using your application.
+This is a template CLI application, which can be used as a boilerplate for awesome CLI tools written in Go.
+This template prints the date or time to the terminal.
+```
+## Examples
+
+```bash
+cli-template date
+cli-template date --format 20060102
+cli-template time
+cli-template time --live
 ```
 
 ## Flags
@@ -21,54 +29,21 @@ examples and usage of using your application.
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`cli-template hello`|A brief description of your command|
+|`cli-template date`|Prints the current date.|
 |`cli-template help`|Help about any command|
-# ... hello
-`cli-template hello`
+|`cli-template time`|Prints the current time|
+# ... date
+`cli-template date`
 
 ## Usage
-> A brief description of your command
+> Prints the current date.
 
 cli-template [global options] command [options] [arguments...]
-
-## Description
-
-```
-A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.
-```
 
 ## Flags
 |Flag|Usage|
 |----|-----|
-|`-n, --name string`|Your name|
-
-## Commands
-|Command|Usage|
-|-------|-----|
-|`cli-template hello test`|A brief description of your command|
-# ... hello test
-`cli-template hello test`
-
-## Usage
-> A brief description of your command
-
-cli-template [global options] command [options] [arguments...]
-
-## Description
-
-```
-A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.
-```
+|`-f, --format string`|specify a custom date format (default "02 Jan 06")|
 # ... help
 `cli-template help`
 
@@ -83,6 +58,24 @@ cli-template [global options] command [options] [arguments...]
 Help provides help for any command in the application.
 Simply type cli-template help [path to command] for full details.
 ```
+# ... time
+`cli-template time`
+
+## Usage
+> Prints the current time
+
+cli-template [global options] command [options] [arguments...]
+
+## Description
+
+```
+You can print a live clock with the '--live' flag!
+```
+
+## Flags
+|Flag|Usage|
+|----|-----|
+|`-l, --live`|live output|
 
 
 ---
