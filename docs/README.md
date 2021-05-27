@@ -2,6 +2,10 @@
 
 <p align="center">⚗ A template for beautiful, modern, cross-platform compatible CLI tools written with Go!</p>
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/31022056/119874548-05172f00-bf26-11eb-88f4-1445de8aa702.png" alt="Screenshot">
+</p>
+
 ----
 
 <p align="center">
