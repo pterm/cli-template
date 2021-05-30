@@ -39,10 +39,13 @@ func Execute() {
 		pcli.CheckForUpdates()
 		os.Exit(0)
 	}()
+
+	// Execute cobra
 	if err := rootCmd.Execute(); err != nil {
 		pcli.CheckForUpdates()
 		os.Exit(1)
 	}
+
 	pcli.CheckForUpdates()
 }
 
