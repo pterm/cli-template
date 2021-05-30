@@ -23,6 +23,7 @@
 |[Automatic Releases 🚀](#automatic-releases)|
 |[Automatic Website/Docs Generation 🌐](#automatic-website-generation)|
 |[Automatic Deployment 🔝](#automatic-deployment)|
+|[Update Checking ♻](#update-checking)|
 |[Custom CI-System 🤖](#custom-ci-system)|
 |[Custom Libraries 🔬](#custom-libraries)|
 |[Easy installation for your users (one command) 🐥](#install-ready)|
@@ -73,6 +74,8 @@ You don't need to document anything by yourself.
 You only need to enable GitHub Pages by going to your repository settings. (set to `/docs`)
 
 ### Automatic Deployment
+
+### Update Checking
 
 ### Custom CI-System
 
