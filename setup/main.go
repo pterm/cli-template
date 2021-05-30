@@ -37,13 +37,14 @@ func main() {
 	project.ProjectURL = pterm.Sprintf("github.com/%s/%s", project.Username, project.Reponame)
 	project.ProjectName = pterm.Sprintf("%s/%s", project.Username, project.Reponame)
 
-	const cliTemplateURL = "pterm/cli-template"
-
-	pterm.Info.Printfln("Replacing all '%s' with %s", pterm.Magenta(cliTemplateURL), pterm.Magenta(project.ProjectName))
+	const cliTemplatePath = "pterm/cli-template"
+	pterm.Info.Printfln("Replacing all '%s' with %s", pterm.Magenta(cliTemplatePath), pterm.Magenta(project.ProjectName))
 	walkOverExt("go,mod", func(path string) {
-		pterm.Debug.Printfln("Replacing '%s' in %s with %s", pterm.Magenta(cliTemplateURL), path, pterm.Magenta(project.ProjectName))
-		replaceAllInFile(path, cliTemplateURL, project.ProjectName)
+		pterm.Debug.Printfln("Replacing '%s' in %s with %s", pterm.Magenta(cliTemplatePath), path, pterm.Magenta(project.ProjectName))
+		replaceAllInFile(path, cliTemplatePath, project.ProjectName)
 	})
+
+	replaceAllInFile("./cmd/root.go", `Use:   "cli-template",`, pterm.Sprintf(`Use:   "%s",`, project.Reponame))
 
 	pterm.Fatal.PrintOnError(os.Remove(getPathTo("./README.md")))
 	pterm.Fatal.PrintOnError(os.Rename(getPathTo("./README.template-setup.md"), getPathTo("./README.template.md")))
