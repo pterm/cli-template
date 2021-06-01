@@ -33,11 +33,10 @@
 You can find an in-depth tutorial in the Wiki here: [Getting Started](https://github.com/pterm/cli-template/wiki/Getting-Started)
 
 1. Click on <kbd>Use this template</kbd> on the top of the page.
-1. Wait for your repository to initialize.
-1. Create a personal access token (with repo scope) and add it as a repository secret (`REPO_ACCESS_TOKEN`). [(GitHub Docs)](https://docs.github.com/es/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository)
-1. Clone and open your repository to change the name and description of your CLI in `./cmd/root.go`.
-1. After you have set up your programm you have to create the very first release manually (`v0.0.1`) to initialize the CI-System.
-    1. Don't worry if your CLI tool doesn't do anything yet. It's common that the `v0.0.1` release is just the plain project setup.
+1. Enable GitHub Pages and set the path to `/docs`.
+1. Create a personal access token (with repo scope) and add it as a repository secret (name: `REPO_ACCESS_TOKEN`).
+1. Clone and open your repository to change the description of your CLI in `./cmd/root.go`.
+1. After you have set up your programm you have to create the very first release manually (`v0.0.1`), to initialize the CI-System. (Don't worry if your CLI tool doesn't do anything yet. It's common that the `v0.0.1` release is just the plain project setup)
 1. The setup is done and you can start to code!
 
 This template uses [spf13/cobra](https://github.com/spf13/cobra) as CLI framework.  
