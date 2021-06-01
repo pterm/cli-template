@@ -77,10 +77,10 @@ The command will automatically be put into your README.md, after you click <kbd>
 
 > [Documentation link](https://github.com/pterm/cli-template/wiki/Automatic-Website-Generation)
 
-Everytime you push a new commit, a GitHub Pages website is created/updated, which documents your whole CLI tool automatically.
+Every time you push a new commit, a GitHub Pages website is created/updated, which documents your whole CLI tool automatically.
 You don't need to document anything by yourself.
 
-You only need to enable GitHub Pages by going to your repository settings. (set to `/docs`)
+You only need to enable GitHub Pages by going to your repository settings (set the path to `/docs`).
 
 ### Automatic Deployment
 
