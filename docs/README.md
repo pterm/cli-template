@@ -101,6 +101,9 @@ Your users will be notified if a new version of your tool is availble.
 
 > [Documentation link](https://github.com/pterm/cli-template/wiki/Custom-CI-System)
 
+We wrote a custom CI-System, which will be included in your repository.  
+It sets up the template, creates/updates the website, writes docs for you and run your tests. (And much more!)
+
 ### Custom Libraries
 
 > [Documentation link](https://github.com/pterm/cli-template/wiki/Custom-Libraries)
