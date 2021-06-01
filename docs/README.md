@@ -19,14 +19,14 @@
 |This template features|
 |----------------------|
 |[Modern Style 💎](#modern-style)|
-|[Build on top of cobra 💎](#build-on-top-of-cobra)|
+|[Build on top of cobra 🐍](#build-on-top-of-cobra)|
 |[Automatic Releases 🚀](#automatic-releases)|
+|[Easy installation for your users (one command) 🐥](#install-ready)|
 |[Automatic Website/Docs Generation 🌐](#automatic-website-generation)|
 |[Automatic Deployment 🔝](#automatic-deployment)|
 |[Update Checking ♻](#update-checking)|
 |[Custom CI-System 🤖](#custom-ci-system)|
 |[Custom Libraries 🔬](#custom-libraries)|
-|[Easy installation for your users (one command) 🐥](#install-ready)|
 
 ## Getting Started
 
@@ -64,6 +64,16 @@ Cobra is a popular CLI framework for Go.
 Our custom made CI system will detect when you change the version of your CLI and will **automatically create a new GitHub release for you**.
 You'll never have to deploy your CLI tools manually again!
 
+### Install Ready
+
+> [Instl Documentation link](https://docs.instl.sh)
+
+The automatic releases contain binaries, for the most common operating systems.  
+This binaries can be installed using [instl.sh](https://docs.instl.sh).
+
+This means that your users, can install your CLI Tool with a single command!  
+The command will automatically be put into your README.md, after you click <kbd>Use this template</kbd>.
+
 ### Automatic Website Generation
 
 > [Documentation link](https://github.com/pterm/cli-template/wiki/Automatic-Website-Generation)
@@ -82,5 +92,3 @@ You only need to enable GitHub Pages by going to your repository settings. (set 
 ### Custom Libraries
 
 We use libraries, which were specially made for this template, to give you the best user experience without a ton of code.
-
-### Install Ready
