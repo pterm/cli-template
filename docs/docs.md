@@ -80,4 +80,4 @@ You can print a live clock with the '--live' flag!
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 30 May 2021**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 01 June 2021**
