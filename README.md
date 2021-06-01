@@ -85,10 +85,24 @@ You only need to enable GitHub Pages by going to your repository settings. (set 
 
 ### Automatic Deployment
 
+> [Goreleaser Documentation link](https://goreleaser.com)
+
+This template uses Goreleaser to build binaries of GitHub releases, for the most common operating systems.  
+Since we feature [Automatic Releases](#automatic-releases), your whole deployment process is automated, when you increase
+the version of your CLI tool.
+
 ### Update Checking
+
+> [Documentation link](https://github.com/pterm/cli-template/wiki/Update-Checking)
+
+Your users will be notified if a new version of your tool is availble.
 
 ### Custom CI-System
 
+> [Documentation link](https://github.com/pterm/cli-template/wiki/Custom-CI-System)
+
 ### Custom Libraries
+
+> [Documentation link](https://github.com/pterm/cli-template/wiki/Custom-Libraries)
 
 We use libraries, which were specially made for this template, to give you the best user experience without a ton of code.
