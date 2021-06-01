@@ -30,7 +30,7 @@
 
 ## Getting Started
 
-You can find an in-depth tutorial in the Wiki here: [Getting Started](https://github.com/pterm/cli-template/wiki/Getting-Started)
+**You can find an in-depth tutorial in the Wiki here: [Getting Started](https://github.com/pterm/cli-template/wiki/Getting-Started)**
 
 1. Click on <kbd>Use this template</kbd> on the top of the page.
 1. Enable GitHub Pages and set the path to `/docs`.
