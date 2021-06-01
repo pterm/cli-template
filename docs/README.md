@@ -92,8 +92,6 @@ the version of your CLI tool.
 
 ### Update Checking
 
-> [Documentation link](https://github.com/pterm/cli-template/wiki/Update-Checking)
-
 Your users will be notified if a new version of your tool is availble.
 
 ### Custom CI-System
@@ -104,7 +102,5 @@ We wrote a custom CI-System, which will be included in your repository.
 It sets up the template, creates/updates the website, writes docs for you and run your tests. (And much more!)
 
 ### Custom Libraries
-
-> [Documentation link](https://github.com/pterm/cli-template/wiki/Custom-Libraries)
 
 We use libraries, which were specially made for this template, to give you the best user experience without a ton of code.
