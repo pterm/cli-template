@@ -74,7 +74,6 @@ This means that your users, can install your CLI Tool with a single command!
 The command will automatically be put into your README.md, after you click <kbd>Use this template</kbd>.
 
 The commands will look like below, depending on the OS, your user has.  
-(you just have to replace username/reponame with your repository, but our CI-System will do that for you)
 
 **Windows**
 
