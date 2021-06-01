@@ -73,6 +73,27 @@ This binaries can be installed using [instl.sh](https://docs.instl.sh).
 This means that your users, can install your CLI Tool with a single command!  
 The command will automatically be put into your README.md, after you click <kbd>Use this template</kbd>.
 
+Your users can install your tool with those commands  
+(you just have to replace username/reponame with your repository, but our CI-System will do that for you)
+
+**Windows**
+
+```powershell
+iwr instl.sh/username/reponame/windows | iex 
+```
+
+**macOS**
+
+```shell
+curl -sSL instl.sh/username/reponame/macos | sudo bash   
+```
+
+**Linux**
+
+```shell
+curl -sSL instl.sh/username/reponame/linux | sudo bash  
+```
+
 ### Automatic Website Generation
 
 > [Documentation link](https://github.com/pterm/cli-template/wiki/Automatic-Website-Generation)
