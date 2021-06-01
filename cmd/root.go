@@ -57,6 +57,7 @@ func init() {
 	rootCmd.PersistentFlags().BoolVarP(&pcli.DisableUpdateChecking, "disable-update-checks", "", false, "disables update checks")
 
 	// Use https://github.com/pterm/pcli to style the output of cobra.
+	pcli.SetRepo("pterm/cli-template")
 	pcli.SetRootCmd(rootCmd)
 	pcli.Setup()
 
