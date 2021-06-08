@@ -3,7 +3,7 @@
 ## Usage
 > This cli template shows the date and time in the terminal
 
-cli-template [global options] command [options] [arguments...]
+cli-template
 
 ## Description
 
@@ -39,7 +39,7 @@ cli-template time --live
 ## Usage
 > Prints the current date.
 
-cli-template [global options] command [options] [arguments...]
+cli-template date
 
 ## Flags
 |Flag|Usage|
@@ -51,7 +51,7 @@ cli-template [global options] command [options] [arguments...]
 ## Usage
 > Help about any command
 
-cli-template [global options] command [options] [arguments...]
+cli-template help [command]
 
 ## Description
 
@@ -65,7 +65,7 @@ Simply type cli-template help [path to command] for full details.
 ## Usage
 > Prints the current time
 
-cli-template [global options] command [options] [arguments...]
+cli-template time
 
 ## Description
 
@@ -80,4 +80,4 @@ You can print a live clock with the '--live' flag!
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 01 June 2021**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 08 June 2021**
