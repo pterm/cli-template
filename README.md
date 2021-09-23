@@ -67,7 +67,7 @@ You'll never have to deploy your CLI tools manually again!
 
 > [Instl Documentation link](https://docs.instl.sh)
 
-The automatic releases contain binaries, for the most common operating systems.  
+The [automatic releases](#automatic-releases) contain binaries, for the most common operating systems.  
 This binaries can be installed using [instl.sh](https://docs.instl.sh).
 
 This means that your users, can install your CLI Tool with a single command!  
