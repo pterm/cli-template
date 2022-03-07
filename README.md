@@ -84,13 +84,13 @@ iwr instl.sh/username/reponame/windows | iex
 **macOS**
 
 ```shell
-curl -sSL instl.sh/username/reponame/macos | sudo bash   
+curl -sSL instl.sh/username/reponame/macos | bash   
 ```
 
 **Linux**
 
 ```shell
-curl -sSL instl.sh/username/reponame/linux | sudo bash  
+curl -sSL instl.sh/username/reponame/linux | bash  
 ```
 
 ### Automatic Website Generation
