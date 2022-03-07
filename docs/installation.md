@@ -19,7 +19,7 @@ iwr instl.sh/pterm/cli-template/windows | iex
 ### Linux Command
 
 ```bash
-curl -sSL instl.sh/pterm/cli-template/linux | sudo bash
+curl -sSL instl.sh/pterm/cli-template/linux | bash
 ```
 
 #### ** macOS **
@@ -27,7 +27,7 @@ curl -sSL instl.sh/pterm/cli-template/linux | sudo bash
 ### macOS Command
 
 ```bash
-curl -sSL instl.sh/pterm/cli-template/macos | sudo bash
+curl -sSL instl.sh/pterm/cli-template/macos | bash
 ```
 
 #### ** Compile from source **
