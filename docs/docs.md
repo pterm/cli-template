@@ -30,7 +30,7 @@ cli-template time --live
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`cli-template completion`|generate the autocompletion script for the specified shell|
+|`cli-template completion`|Generate the autocompletion script for the specified shell|
 |`cli-template date`|Prints the current date.|
 |`cli-template help`|Help about any command|
 |`cli-template time`|Prints the current time|
@@ -38,14 +38,13 @@ cli-template time --live
 `cli-template completion`
 
 ## Usage
-> generate the autocompletion script for the specified shell
+> Generate the autocompletion script for the specified shell
 
 cli-template completion
 
 ## Description
 
 ```
-
 Generate the autocompletion script for cli-template for the specified shell.
 See each sub-command's help for details on how to use the generated script.
 
@@ -54,38 +53,42 @@ See each sub-command's help for details on how to use the generated script.
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`cli-template completion bash`|generate the autocompletion script for bash|
-|`cli-template completion fish`|generate the autocompletion script for fish|
-|`cli-template completion powershell`|generate the autocompletion script for powershell|
-|`cli-template completion zsh`|generate the autocompletion script for zsh|
+|`cli-template completion bash`|Generate the autocompletion script for bash|
+|`cli-template completion fish`|Generate the autocompletion script for fish|
+|`cli-template completion powershell`|Generate the autocompletion script for powershell|
+|`cli-template completion zsh`|Generate the autocompletion script for zsh|
 # ... completion bash
 `cli-template completion bash`
 
 ## Usage
-> generate the autocompletion script for bash
+> Generate the autocompletion script for bash
 
 cli-template completion bash
 
 ## Description
 
 ```
-
 Generate the autocompletion script for the bash shell.
 
 This script depends on the 'bash-completion' package.
 If it is not installed already, you can install it via your OS's package manager.
 
 To load completions in your current shell session:
-$ source <(cli-template completion bash)
+
+	source <(cli-template completion bash)
 
 To load completions for every new session, execute once:
-Linux:
-  $ cli-template completion bash > /etc/bash_completion.d/cli-template
-MacOS:
-  $ cli-template completion bash > /usr/local/etc/bash_completion.d/cli-template
+
+#### Linux:
+
+	cli-template completion bash > /etc/bash_completion.d/cli-template
+
+#### macOS:
+
+	cli-template completion bash > /usr/local/etc/bash_completion.d/cli-template
 
 You will need to start a new shell for this setup to take effect.
-  
+
 ```
 
 ## Flags
@@ -96,21 +99,22 @@ You will need to start a new shell for this setup to take effect.
 `cli-template completion fish`
 
 ## Usage
-> generate the autocompletion script for fish
+> Generate the autocompletion script for fish
 
 cli-template completion fish
 
 ## Description
 
 ```
-
 Generate the autocompletion script for the fish shell.
 
 To load completions in your current shell session:
-$ cli-template completion fish | source
+
+	cli-template completion fish | source
 
 To load completions for every new session, execute once:
-$ cli-template completion fish > ~/.config/fish/completions/cli-template.fish
+
+	cli-template completion fish > ~/.config/fish/completions/cli-template.fish
 
 You will need to start a new shell for this setup to take effect.
 
@@ -124,18 +128,18 @@ You will need to start a new shell for this setup to take effect.
 `cli-template completion powershell`
 
 ## Usage
-> generate the autocompletion script for powershell
+> Generate the autocompletion script for powershell
 
 cli-template completion powershell
 
 ## Description
 
 ```
-
 Generate the autocompletion script for powershell.
 
 To load completions in your current shell session:
-PS C:\> cli-template completion powershell | Out-String | Invoke-Expression
+
+	cli-template completion powershell | Out-String | Invoke-Expression
 
 To load completions for every new session, add the output of the above command
 to your powershell profile.
@@ -150,26 +154,29 @@ to your powershell profile.
 `cli-template completion zsh`
 
 ## Usage
-> generate the autocompletion script for zsh
+> Generate the autocompletion script for zsh
 
 cli-template completion zsh
 
 ## Description
 
 ```
-
 Generate the autocompletion script for the zsh shell.
 
 If shell completion is not already enabled in your environment you will need
 to enable it.  You can execute the following once:
 
-$ echo "autoload -U compinit; compinit" >> ~/.zshrc
+	echo "autoload -U compinit; compinit" >> ~/.zshrc
 
 To load completions for every new session, execute once:
-# Linux:
-$ cli-template completion zsh > "${fpath[1]}/_cli-template"
-# macOS:
-$ cli-template completion zsh > /usr/local/share/zsh/site-functions/_cli-template
+
+#### Linux:
+
+	cli-template completion zsh > "${fpath[1]}/_cli-template"
+
+#### macOS:
+
+	cli-template completion zsh > /usr/local/share/zsh/site-functions/_cli-template
 
 You will need to start a new shell for this setup to take effect.
 
@@ -226,4 +233,4 @@ You can print a live clock with the '--live' flag!
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 07 March 2022**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 15 March 2022**
